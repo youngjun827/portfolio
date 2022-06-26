@@ -34,7 +34,7 @@ const Work = () => {
               </span>
               <div className="pt-8 text-center">
                 <a
-                  href="https://youngjunjoovideochatapp.netlify.app"
+                  href="https://youngjun-video-chat-app.netlify.app"
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
@@ -42,7 +42,7 @@ const Work = () => {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/youngjun827/Video-Chat-App"
+                  href="https://github.com/youngjun827/video-chat-app"
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
