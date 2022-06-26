@@ -1,0 +1,7 @@
+.loadingScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ede7dd;
+  height: 100vh;
+}
