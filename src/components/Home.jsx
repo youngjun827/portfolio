@@ -12,7 +12,7 @@ const Home = () => {
     <div name="home" className="w-full h-screen bg-[#ede7dd]">
       {/* Container */}
       <div className="max-w-[1024px] mx-auto md:px-[10px] lg:px-[0] h-full flex flex-col md:flex-wrap md:flex-row items-center justify-center">
-        <div className="mb-[10px] mx-[2rem] sm:mx-[0] mt-[4rem] sm:mx-[0] mx-auto min-w-[418px] sm:mt-[60px] sm:mb-[20px] sm:mb-[5px] sm:max-h-[300px] sm:max-w-[486px] md:max-h-[400px] md:max-w-[374px] lg:max-h-[500px] lg:max-w-[496px] ">
+        <div className="mb-[10px] mx-[2rem] sm:mx-[0] mt-[4rem] sm:mx-[0] mx-auto min-w-[375px] sm:mt-[60px] sm:mb-[20px] sm:mb-[5px] sm:max-h-[300px] sm:max-w-[486px] md:max-h-[400px] md:max-w-[374px] lg:max-h-[500px] lg:max-w-[496px] ">
           <p className=" text-[#3e3e1f] font-semibold">Hi, my name is</p>
           <h1 className="text-6xl sm:text-[4rem] md:text-7xl font-bold text-[#8a3918]">
             Young Jun
@@ -24,10 +24,10 @@ const Home = () => {
           <div className="mb-4 mt-2">
             <p className="text-[0.9rem] sm:text-base font-medium text-[#898382]">
               Would you like to try some?
-              <p className="text-[0.9rem] sm:text-base font-medium pl-[14rem] sm:pl-60 md:pl-52 lg:pl-60">
+              <p className="text-[0.9rem] sm:text-base font-medium pl-[12.2rem] sm:pl-60 md:pl-52 lg:pl-60">
                 ...no?
               </p>
-              <h2 className="text-[0.9rem] sm:text-base font-medium text-[#898382] pl-[18rem] sm:pl-80 md:pl-[250px] lg:pl-80">
+              <h2 className="text-[0.9rem] sm:text-base font-medium text-[#898382] pl-[15rem] sm:pl-80 md:pl-[250px] lg:pl-80">
                 well... I hope you
               </h2>
             </p>
