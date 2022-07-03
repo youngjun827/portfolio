@@ -24,10 +24,10 @@ const Home = () => {
           <div className="mb-4 mt-2">
             <p className="text-[0.9rem] sm:text-base font-medium text-[#898382]">
               Would you like to try some?
-              <p className="text-[0.9rem] sm:text-base font-medium pl-[11.8rem] sm:pl-60 md:pl-52 lg:pl-60">
+              <p className="text-[0.9rem] sm:text-base font-medium pl-[14rem] sm:pl-60 md:pl-52 lg:pl-60">
                 ...no?
               </p>
-              <h2 className="text-[0.9rem] sm:text-base font-medium text-[#898382] pl-[13.9rem] sm:pl-80 md:pl-[250px] lg:pl-80">
+              <h2 className="text-[0.9rem] sm:text-base font-medium text-[#898382] pl-[18rem] sm:pl-80 md:pl-[250px] lg:pl-80">
                 well... I hope you
               </h2>
             </p>
