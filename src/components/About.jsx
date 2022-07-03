@@ -21,9 +21,9 @@ const About = () => {
           </div>
           <div>
             <p>
-              Hi hello! <br></br>I am Young Jun. I like talking, korean bbq,
-              soju, listening to K-R&B, and coffee. I am an incomming student to
-              the University of Waterloo. During the time off-work, I dedicate
+              Hi hello! <br></br>I am Young Jun. I like talking, Korean bbq,
+              soju, listening to K-R&B, and coffee. I am an incoming student at
+              the University of Waterloo. During the time off work, I dedicate
               my time collaborating with a group of enthusiasts to create
               software and web that I find interesting.
             </p>

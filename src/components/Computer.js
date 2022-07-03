@@ -21,8 +21,8 @@ export default function Model({ ...props }) {
         <group
           name="Sketchfab_model"
           rotation={[-Math.PI / 2.2, 0, -0.2]}
-          position={[0, -1.2, 0]}
-          scale="1.20"
+          position={[-0.1, -1.2, 0]}
+          scale="1.25"
         >
           <group name="root">
             <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
