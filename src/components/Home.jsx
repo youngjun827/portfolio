@@ -12,22 +12,22 @@ const Home = () => {
     <div name="home" className="w-full h-screen bg-[#ede7dd]">
       {/* Container */}
       <div className="max-w-[1024px] mx-auto md:px-[10px] lg:px-[0] h-full flex flex-col md:flex-wrap md:flex-row items-center justify-center">
-        <div className="mb-[10px] mx-auto sm:mt-[60px] sm:mb-[20px] sm:mb-[5px] sm:max-h-[300px] sm:max-w-[486px] md:max-h-[400px] md:max-w-[374px] lg:max-h-[500px] lg:max-w-[496px] ">
+        <div className="mb-[10px] mx-[2rem] sm:mx-[0] mt-[4rem] sm:mx-[0] mx-auto max-w-[370px] sm:mt-[60px] sm:mb-[20px] sm:mb-[5px] sm:max-h-[300px] sm:max-w-[486px] md:max-h-[400px] md:max-w-[374px] lg:max-h-[500px] lg:max-w-[496px] ">
           <p className=" text-[#3e3e1f] font-semibold">Hi, my name is</p>
           <h1 className="text-6xl sm:text-[4rem] md:text-7xl font-bold text-[#8a3918]">
             Young Jun
           </h1>
-          <h2 className="pt-2 mb-2 text-[1.54rem] sm:text-4xl font-bold text-[#ceb69b]">
+          <h2 className="pt-2 mb-2 text-4xl sm:text-4xl font-bold text-[#ceb69b]">
             I bake cookies in my Watson for a living.
           </h2>
 
           <div className="mb-4 mt-2">
             <p className="text-[0.9rem] sm:text-base font-medium text-[#898382]">
               Would you like to try some?
-              <p className="text-[0.9rem] sm:text-base font-medium pl-60 sm:pl-60 md:pl-52 lg:pl-60">
+              <p className="text-[0.9rem] sm:text-base font-medium pl-52 sm:pl-60 md:pl-52 lg:pl-60">
                 ...no?
               </p>
-              <h2 className="text-[0.9rem] sm:text-base font-medium text-[#898382] pl-80 sm:pl-80 md:pl-[250px] lg:pl-80">
+              <h2 className="text-[0.9rem] sm:text-base font-medium text-[#898382] pl-64 sm:pl-80 md:pl-[250px] lg:pl-80">
                 well... I hope you
               </h2>
             </p>
@@ -47,7 +47,7 @@ const Home = () => {
           </div>
         </div>
 
-        <Canvas className="mx-auto lg:px-[0] mt-[10px] max-h-[300px] max-w-[360px] sm:mt-[25px] sm:max-h-[300px] sm:max-w-[496px] md:mt-[60px] md:max-h-[505px] md:max-w-[374px] lg:max-h-[605px] lg:max-w-[496px] shadow-lg shadow-[#ceb69b]">
+        <Canvas className="mx-auto lg:px-[0] mt-[10px] max-h-[300px] max-w-[240px] sm:mt-[25px] sm:max-h-[300px] sm:max-w-[496px] md:mt-[60px] md:max-h-[505px] md:max-w-[350px] lg:max-h-[605px] lg:max-w-[496px] shadow-lg shadow-[#ceb69b]">
           <OrbitControls enableZoom={false}></OrbitControls>
           <ambientLight intensity={0.5}></ambientLight>
           <directionalLight
