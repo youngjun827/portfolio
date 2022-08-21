@@ -3,8 +3,6 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Sphere from "./AnimatedSphere";
-import Box from "./Box";
 import Computer from "./Computer";
 
 import Navigation from "./Navigation";
@@ -27,7 +25,7 @@ const Home = () => {
             </h2>
 
             <div className="mb-4 mt-2">
-              <p className="text-[0.9rem] sm:text-base font-medium text-[#898382]">
+              <span className="text-[0.9rem] sm:text-base font-medium text-[#898382]">
                 Would you like to try some?
                 <p className="text-[0.9rem] sm:text-base font-medium pl-[12.2rem] sm:pl-60 md:pl-52 lg:pl-60">
                   ...no?
@@ -35,7 +33,7 @@ const Home = () => {
                 <h2 className="text-[0.9rem] sm:text-base font-medium text-[#898382] pl-[15rem] sm:pl-80 md:pl-[250px] lg:pl-80">
                   well... I hope you
                 </h2>
-              </p>
+              </span>
             </div>
 
             {/* Hide button:         <div className="max-w-[563px] invisible lg:visible"> */}
