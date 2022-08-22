@@ -50,7 +50,7 @@ const Home = () => {
             </div>
           </div>
 
-          <Canvas className="mx-auto lg:px-[0] max-h-[300px] max-w-[240px] sm:max-h-[300px] sm:max-w-[496px] md:max-h-[505px] md:max-w-[350px] lg:max-h-[605px] lg:max-w-[496px] shadow-lg shadow-[#ceb69b]">
+          <Canvas className="hidden sm:block mx-auto lg:px-[0] max-h-[300px] max-w-[240px] sm:max-h-[300px] sm:max-w-[496px] md:max-h-[505px] md:max-w-[350px] lg:max-h-[605px] lg:max-w-[496px] shadow-lg shadow-[#ceb69b]">
             <OrbitControls enableZoom={false}></OrbitControls>
             <ambientLight intensity={0.5}></ambientLight>
             <directionalLight
