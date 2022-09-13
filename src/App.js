@@ -12,12 +12,12 @@ import Footer from "./components/Footer"
 import "./components/loadingScreen.css";
 import "./components/Toastify.css"
 
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [loading, setLoading] = useState(false);
-  // const notify = () => toast("Click on the WATSON computer shown below and drag it around!");
+  const notify = () => toast("Click on the WATSON computer shown below and drag it around!");
 
   useEffect(() => {
     setLoading(true);
@@ -48,11 +48,11 @@ function App() {
           <Work></Work>
           {/* <Contact></Contact> */}
           <Footer/>
-          {/* <ToastContainer
+          <ToastContainer
             autoClose={10000}
             toastStyle={{backgroundColor: "#ede7dd", color: "#3e3e1f", fontWeight: "bold"}}  
             progressClassName="toastProgress"
-          /> */}
+          />
         </>
       )}
     </div>
