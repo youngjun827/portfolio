@@ -10,7 +10,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("computer.gltf");
+  const { nodes, materials, animations } = useGLTF("./computer.gltf");
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
     actions.Animation.play();
