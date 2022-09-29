@@ -6,6 +6,19 @@ import { OrbitControls } from "@react-three/drei";
 import Computer from "./Computer";
 
 import Navigation from "./Navigation";
+import { ScaleLoader } from "react-spinners";
+
+import "../components/loadingScreen.css";
+
+const Loading =
+  <div className="loadingScreen">
+    <ScaleLoader 
+      size={40}
+      color={"#8a3918"}
+      loading={true}
+      speedMultiplier={"1.6"}
+    />
+  </div>
 
 const Home = () => {
   return (
@@ -50,19 +63,20 @@ const Home = () => {
             </div>
           </div>
 
-          <Canvas className="hidden sm:block mx-auto lg:px-[0] max-h-[300px] max-w-[240px] sm:max-h-[300px] sm:max-w-[496px] md:max-h-[505px] md:max-w-[350px] lg:max-h-[605px] lg:max-w-[496px] shadow-lg shadow-[#ceb69b]">
-            <OrbitControls enableZoom={false}></OrbitControls>
-            <ambientLight intensity={0.5}></ambientLight>
-            <directionalLight
-              position={[-2, 5, 2]}
-              intensity={1}
-            ></directionalLight>
-            <Suspense fallback={null}>
-              <Computer></Computer>
-            </Suspense>
-          </Canvas>
+      
+          <Suspense fallback={Loading}>
+            <Canvas className="hidden sm:block mx-auto max-w-[240px] lg:px-[0] max-h-[300px] sm:max-h-[300px] sm:max-w-[496px] md:max-h-[505px] md:max-w-[350px] lg:max-h-[605px] lg:max-w-[496px] shadow-lg shadow-[#ceb69b] ">
+              <OrbitControls enableZoom={false}/>
+                <ambientLight intensity={0.5}/>
+                <directionalLight
+                  position={[-2, 5, 2]}
+                  intensity={1}
+                />
+                <Computer/>
+            </Canvas>
+          </Suspense>
+          </div>
         </div>
-      </div>
     </>
   );
 };

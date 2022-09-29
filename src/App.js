@@ -16,30 +16,49 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [loading, setLoading] = useState(false);
-  const notify = () => toast("Click on the WATSON computer shown below and drag it around!");
+  // const [loading, setLoading] = useState(false);
+  // const notify = () => toast("Click on the WATSON computer shown below and drag it around!");
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      // notify()
-    }, 400);
+    // setLoading(true);
+    // setTimeout(() => {
+    //   setLoading(false);
+    //   // notify()
+    // }, 400);
   }, []);
 
   return (
-    <div>
-      {loading ? (
-        <div className="loadingScreen">
-          <ScaleLoader
-            size={40}
-            color={"#8a3918"}
-            loading={loading}
-            speedMultiplier={"1.6"}
-          />
-        </div>
-      ) : (
-        <>
+    // <div>
+    //   {loading ? (
+    //     <div className="loadingScreen">
+    //       <ScaleLoader
+    //         size={40}
+    //         color={"#8a3918"}
+    //         loading={loading}
+    //         speedMultiplier={"1.6"}
+    //       />
+    //     </div>
+    //   ) : (
+    //     <>
+    //       {/* <Navigation/> */}
+    //       <NavBar/>
+    //       <Home/>
+    //       <About/>
+    //       <Skills/>
+    //       <Work></Work>
+    //       {/* <Contact></Contact> */}
+    //       <Footer/>
+    //       <ToastContainer
+    //         autoClose={10000}
+    //         toastStyle={{backgroundColor: "#ede7dd", color: "#3e3e1f", fontWeight: "bold"}}  
+    //         progressClassName="toastProgress"
+    //       />
+    //     </>
+    //   )}
+    // </div>
+
+
+            <>
           {/* <Navigation/> */}
           <NavBar/>
           <Home/>
@@ -54,8 +73,6 @@ function App() {
             progressClassName="toastProgress"
           />
         </>
-      )}
-    </div>
   );
 }
 

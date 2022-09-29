@@ -4,7 +4,7 @@ import Linux from "../assets/Linux.png";
 import ReactImg from "../assets/react.png";
 import Express from "../assets/express.png";
 import Node from "../assets/node.png";
-import AWS from "../assets/aws.png";
+import Git from "../assets/git.png";
 import GitHub from "../assets/github-black.png";
 import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
@@ -53,8 +53,8 @@ const Skills = () => {
             <p className="my-4">GitHub</p>
           </div>
           <div className="pt-4 shadow-md shadow-[#636060] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={AWS} alt="AWS icon" />
-            <p className="my-4">AWS</p>
+            <img className="w-20 mx-auto" src={Git} alt="AWS icon" />
+            <p className="my-4">Git</p>
           </div>
           <div className="pt-4 shadow-md shadow-[#636060] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Linux} alt="Linux icon" />
