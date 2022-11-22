@@ -9,11 +9,13 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Footer from "./components/Footer"
 
+
 import "./components/loadingScreen.css";
 import "./components/Toastify.css"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   // const [loading, setLoading] = useState(false);
