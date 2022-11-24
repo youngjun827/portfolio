@@ -30,7 +30,7 @@ const About = () => {
             <p className="text-[#ede7dd]">
               Hi hello! <br></br>I am Young Jun. I like talking, Korean bbq,
               soju, listening to K-R&B, and coffee. I am a first-year computer science student at
-              the University of Waterloo and a <strong>MLH Fellow</strong> from the November of 2022 Batch. During the time off work, I dedicate
+              the University of Waterloo and a <strong>MLH PREP Fellow</strong> from the November of 2022 Batch. During the time off work, I dedicate
               my time collaborating with a group of enthusiasts to create
               software and web that I find interesting.
             </p>
