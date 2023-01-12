@@ -22,17 +22,14 @@ const About = () => {
               Math brings me joy, and I live off satisfaction of <br></br>
               git push -u origin main
             </p>
-            <a href="https://mlh-prep-22-nov-prep-2-portfolio.netlify.app/" target="_blank" rel="noreferrer">
+            {/* <a href="https://mlh-prep-22-nov-prep-2-portfolio.netlify.app/" target="_blank" rel="noreferrer">
               <img src={Fellow} alt="Avatar" className="mt-2 sm:mt-0 h-14 align-middle w-14 rounded-full bg-white p-1 animate-[wiggle_1s_ease-in-out_infinite]"></img>
-            </a>
+            </a> */}
           </div>
           <div>
             <p className="text-[#ede7dd]">
-              Hi hello! <br></br>I am Young Jun. I like talking, Korean bbq,
-              soju, listening to K-R&B, and coffee. I am a first-year computer science student at
-              the University of Waterloo and a <strong>MLH PREP Fellow</strong> from the November of 2022 Batch. During the time off work, I dedicate
-              my time collaborating with a group of enthusiasts to create
-              software and web that I find interesting.
+              Hi hello! <br></br>
+              I am Young Jun. I like talking, Korean bbq, soju, listening to K-R&B, and coffee. I am a first-year mathematics student at the University of Waterloo and an <strong>MLH Fellow</strong> in the spring of 2022 software engineering track. During my time off work, I dedicate my time to collaborating with a group of enthusiasts to create software and web that I find interesting.
             </p>
           </div>
         </div>
