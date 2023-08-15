@@ -21,11 +21,11 @@ const About = () => {
           </div>
           <div>
             <p className='text-[#ede7dd]'>
-              Hi hello! <br></br>I am Young Jun. I like talking, Korean bbq,
-              soju, listening to K-R&B, and coffee. I am a second-year
-              mathematics student at the University of Waterloo. During my time
-              off work, I dedicate my time to collaborating with a group of
-              enthusiasts to create software and web that I find interesting.
+              Hi hello! <br></br>I am Young Jun Joo. I like talking, Korean bbq,
+              listening to K-R&B, and coffee. I am a second-year mathematics
+              student at the University of Waterloo. During my time off work, I
+              dedicate my time to collaborating with a group of enthusiasts to
+              create software and web that I find interesting.
             </p>
           </div>
         </div>
