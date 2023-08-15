@@ -1,9 +1,6 @@
 import React from "react";
 
-import WorkImg from "../assets/comming-soon.webp";
 import UW from "../assets/uw-screen-shot.png";
-import Smile from "../assets/Smile.png";
-import MLH from "../assets/mlh.jpeg";
 
 const Work = () => {
   return (
@@ -18,9 +15,7 @@ const Work = () => {
           </p>
         </div>
 
-        {/* Container */}
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-          {/* Grid Item */}
           <div
             style={{
               backgroundImage: `url(${UW})`,
@@ -30,7 +25,6 @@ const Work = () => {
             }}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div bg-[#FFEE00]'
           >
-            {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
               <span className='text-2xl font-bold text-black tracking-wider'>
                 UW GitHub Finder
