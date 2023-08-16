@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Work from "./components/Work/Work";
 import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   useEffect(() => {}, []);
 
   return (
@@ -19,6 +19,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

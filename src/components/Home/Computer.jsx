@@ -8,7 +8,7 @@ title: Smol Ame in an Upcycled Terrarium [HololiveEn]
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-export const Computer = ({ ...props }) => {
+const Computer = ({ ...props }) => {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/computer.gltf");
   const { actions } = useAnimations(animations, group);
@@ -186,4 +186,5 @@ export const Computer = ({ ...props }) => {
   );
 };
 
+export default Computer;
 useGLTF.preload("/computer.gltf");

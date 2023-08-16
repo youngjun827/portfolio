@@ -3,7 +3,7 @@ import React from "react";
 import Logo from "../assets/JOO_white.png";
 import { Link } from "react-scroll";
 
-function Navigation() {
+const Navigation = () => {
   return (
     <div className='w-full h-[75px] z-50 flex justify-around items-center px-4 bg-[#3e3e1f] text-white font-medium rounded'>
       <div>
@@ -13,6 +13,6 @@ function Navigation() {
       </div>
     </div>
   );
-}
+};
 
 export default Navigation;

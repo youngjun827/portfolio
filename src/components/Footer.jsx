@@ -25,7 +25,7 @@ const socialMediaLinks = [
   },
 ];
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
       <nav className='pb-4 flex mt-4 justify-center space-x-6'>
@@ -51,6 +51,6 @@ function Footer() {
       </span>
     </footer>
   );
-}
+};
 
 export default Footer;
