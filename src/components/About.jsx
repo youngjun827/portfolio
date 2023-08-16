@@ -10,7 +10,6 @@ const About = () => {
               About
             </p>
           </div>
-          <div></div>
         </div>
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='text-[#ede7dd] sm:text-right text-4xl font-bold sm:flex sm:flex-col sm:items-end'>
@@ -30,7 +29,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 };
