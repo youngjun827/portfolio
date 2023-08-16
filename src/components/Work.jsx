@@ -11,7 +11,7 @@ const Work = () => {
             Work
           </p>
           <p className='py-4 text-[#ede7dd]'>
-            // Check out some of my recent work
+            Check out some of my recent work
           </p>
         </div>
 
