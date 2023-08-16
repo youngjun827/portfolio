@@ -24,7 +24,6 @@
     "react-toastify": "^9.0.8",
     "react-use-scroll-snap": "^0.0.4",
     "three": "^0.141.0",
-    "typescript": "^5.1.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
