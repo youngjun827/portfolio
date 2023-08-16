@@ -2,7 +2,7 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Computer from "./Computer";
+import { Computer } from "./Computer";
 
 import Navigation from "./Navigation";
 
