@@ -1,51 +1,48 @@
 import React from "react";
-
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-
 import { HiOutlineMail } from "react-icons/hi";
+
+const socialMediaLinks = [
+  {
+    link: "https://www.linkedin.com/in/youngjun827/",
+    icon: <FaLinkedinIn size={20} />,
+    label: "Linkedin account",
+  },
+  {
+    link: "https://github.com/youngjun827",
+    icon: <FaGithub size={20} />,
+    label: "GitHub account",
+  },
+  {
+    link: "mailto:youngjung827@gmail.com",
+    icon: <HiOutlineMail size={20} />,
+    label: "Mail",
+  },
+  {
+    link: "https://twitter.com/YoungJunJoo1",
+    icon: <FaTwitter size={20} />,
+    label: "Twitter page",
+  },
+];
 
 function Footer() {
   return (
-    <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6 '>
-      <div className='pb-4 flex mt-4 space-x-6 sm:justify-center md:mt-0'>
-        <a
-          href='https://www.linkedin.com/in/youngjun827/'
-          target='_blank'
-          className='text-[#3e3e1f] dark:hover:text-white'
-          rel='noreferrer'
-        >
-          <FaLinkedinIn size={20} />
-          <span className='sr-only'>Linkedin account</span>
-        </a>
-        <a
-          href='https://github.com/youngjun827'
-          target='_blank'
-          className='text-[#3e3e1f] dark:hover:text-white'
-          rel='noreferrer'
-        >
-          <FaGithub size={20} />
-          <span className='sr-only'>GitHub account</span>
-        </a>
-        <a
-          href='mailto:youngjung827@gmail.com'
-          target='_blank'
-          className='text-[#3e3e1f] dark:hover:text-white'
-          rel='noreferrer'
-        >
-          <HiOutlineMail size={20} />
-          <span className='sr-only'>Mail</span>
-        </a>
-        <a
-          href='https://twitter.com/YoungJunJoo1'
-          target='_blank'
-          className='text-[#3e3e1f] dark:hover:text-white'
-          rel='noreferrer'
-        >
-          <FaTwitter size={20} />
-          <span className='sr-only'>Twitter page</span>
-        </a>
-      </div>
-      <span className='block text-sm text-[#3e3e1f] font-bold sm:text-center'>
+    <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
+      <nav className='pb-4 flex mt-4 justify-center space-x-6'>
+        {socialMediaLinks.map(({ link, icon, label }) => (
+          <a
+            key={label}
+            href={link}
+            target='_blank'
+            rel='noreferrer'
+            className='text-[#3e3e1f] dark:hover:text-white'
+          >
+            {icon}
+            <span className='sr-only'>{label}</span>
+          </a>
+        ))}
+      </nav>
+      <span className='block text-sm text-[#3e3e1f] font-bold text-center'>
         © 2022{" "}
         <a href='https://youngjun827.github.io/' className='hover:underline'>
           Young Jun Joo™
