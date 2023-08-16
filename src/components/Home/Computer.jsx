@@ -1,10 +1,3 @@
-/*
-author: Seafoam (https://sketchfab.com/seafoam)
-license: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-source: https://sketchfab.com/3d-models/smol-ame-in-an-upcycled-terrarium-hololiveen-490cecc249d242188fda5ad3160a4b24
-title: Smol Ame in an Upcycled Terrarium [HololiveEn]
-*/
-
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
