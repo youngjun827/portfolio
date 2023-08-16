@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
-
   return (
     <>
-      {/* Social icons */}
       <div className='hidden xl:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[140px] h-[60px] px-4 flex justify-between items-center ml-[-75px] hover:ml-[-0px] duration-300 bg-blue-600'>
