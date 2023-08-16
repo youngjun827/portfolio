@@ -1,11 +1,11 @@
 import React from "react";
-import { socialMediaLinks } from "../data/socialMediaLinkData";
+import { footerData } from "../data/footerData.js";
 
 const Footer = () => {
   return (
     <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
       <nav className='pb-4 flex mt-4 justify-center space-x-6'>
-        {socialMediaLinks.map(({ link, icon, label }) => (
+        {footerData.map(({ link, icon, label }) => (
           <a
             key={label}
             href={link}

@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
-export const socialMediaLinks = [
+export const footerData = [
   {
     link: "https://www.linkedin.com/in/youngjun827/",
     icon: <FaLinkedinIn size={20} />,
