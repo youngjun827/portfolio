@@ -1,55 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import { Group, AnimationClip, Mesh, Material, SkinnedMesh } from "three"; // Import necessary types
+import { Group, AnimationClip } from "three";
+import GLTFResult from "../../interfaces/GLTFModelData";
 
-interface GLTFResult {
-  nodes: {
-    Object_4: Mesh;
-    Object_5: Mesh;
-    GLTF_created_0_rootJoint: Group;
-    Object_10: SkinnedMesh;
-    Object_12: SkinnedMesh;
-    Object_14: SkinnedMesh;
-    Object_16: SkinnedMesh;
-    Object_18: SkinnedMesh;
-    Object_19: SkinnedMesh;
-    Object_21: SkinnedMesh;
-    Object_23: SkinnedMesh;
-    Object_25: SkinnedMesh;
-    Object_27: SkinnedMesh;
-    Object_29: SkinnedMesh;
-    Object_31: SkinnedMesh;
-    Object_33: SkinnedMesh;
-    Object_35: SkinnedMesh;
-    Object_37: SkinnedMesh;
-    Object_39: SkinnedMesh;
-    Object_41: SkinnedMesh;
-    GLTF_created_1_rootJoint: Group;
-    Object_65: SkinnedMesh;
-    Object_67: SkinnedMesh;
-  };
-  materials: {
-    pasokon: Material;
-    terrarium1: Material;
-    terrarium1ame: Material;
-    terrarium1ameoutline: Material;
-    // Add more specific material types here
-  };
-  animations: {
-    Animation: AnimationClip;
-    // Add more specific animation types here
-  };
-}
-
-const Computer: React.FC = ({ ...props }) => {
+const Computer: React.FC = () => {
   const group = useRef<Group>(null);
   const { nodes, materials, animations } = useGLTF(
     "/computer.gltf"
   ) as unknown as GLTFResult;
 
-  // Convert animations object to an array of AnimationClip objects
   const animationClips = Object.values(animations) as AnimationClip[];
-
   const { actions } = useAnimations(animationClips, group.current!);
 
   useEffect(() => {
@@ -59,7 +19,7 @@ const Computer: React.FC = ({ ...props }) => {
   }, [actions.Animation]);
 
   return (
-    <group ref={group} {...props}>
+    <group ref={group}>
       <group name='Sketchfab_Scene'>
         <group
           name='Sketchfab_model'
