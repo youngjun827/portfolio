@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { SocialLinks } from "../interfaces/NavBarData";
 
-export const socialLinks = [
+export const socialLinks: SocialLinks = [
   {
     label: "Linkedin",
     icon: <FaLinkedin size={30} />,

@@ -1,5 +1,5 @@
 import React from "react";
-import { socialLinks } from "../data/NavBarData";
+import { socialLinks } from "../data/navBarData";
 
 const Navbar = () => {
   return (
