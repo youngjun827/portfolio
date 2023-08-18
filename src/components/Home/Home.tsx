@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Navigation />
-      <div name='home' className='w-full h-full sm:h-screen bg-[#ede7dd]'>
+      <div id='home' className='w-full h-full sm:h-screen bg-[#ede7dd]'>
         <div className='max-w-[1024px] mx-auto py-[32px] sm:py-[0] md:px-[10px] lg:px-[0] h-full flex flex-col md:flex-wrap md:flex-row items-center justify-center'>
           <div className='mb-[10px] mx-[2rem] sm:mx-[0] mx-auto min-w-[375px] sm:mb-[20px] sm:mb-[5px] sm:max-h-[300px] sm:max-w-[486px] md:max-h-[400px] md:max-w-[374px] lg:max-h-[500px] lg:max-w-[496px] '>
             <p className=' text-[#3e3e1f] font-semibold'>Hi, my name is</p>

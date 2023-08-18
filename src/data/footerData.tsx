@@ -1,3 +1,4 @@
+import React from "react";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 

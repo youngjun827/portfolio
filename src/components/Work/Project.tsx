@@ -1,6 +1,12 @@
 import React from "react";
 
-const Project = ({ title, demoLink, codeLink }) => (
+interface ProjectProps {
+  title: string;
+  demoLink: string;
+  codeLink: string;
+}
+
+const Project: React.FC<ProjectProps> = ({ title, demoLink, codeLink }) => (
   <div className='opacity-0 group-hover:opacity-100'>
     <span className='text-2xl font-bold text-black tracking-wider'>
       {title}
