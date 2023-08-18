@@ -1,9 +1,13 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { SocialLinks } from "../interfaces/NavBarData";
+import { DataItem } from "../interfaces/Linkdata";
 
-export const socialLinks: SocialLinks = [
+interface SocialLinks extends DataItem {
+  bgColor: string;
+}
+
+export const socialLinks: SocialLinks[] = [
   {
     label: "Linkedin",
     icon: <FaLinkedin size={30} />,

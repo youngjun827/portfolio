@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
       <nav className='pb-4 flex mt-4 justify-center space-x-6'>
-        {footerData.map(({ link, icon, label }) => (
+        {footerData.map(({ url, icon, label }) => (
           <a
             key={label}
-            href={link}
+            href={url}
             target='_blank'
             rel='noreferrer'
             className='text-[#3e3e1f] dark:hover:text-white'
