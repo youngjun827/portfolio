@@ -1,11 +1,11 @@
 import React from "react";
-import { footerData } from "../data/footerData";
+import { footerData } from "../data/FooterData";
 
 const Footer = () => {
   return (
     <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
       <nav className='pb-4 flex mt-4 justify-center space-x-6'>
-        {footerData.map(({ url, icon, label }) => (
+        {footerData.map(({ url, image, label }) => (
           <a
             key={label}
             href={url}
@@ -13,7 +13,7 @@ const Footer = () => {
             rel='noreferrer'
             className='text-[#3e3e1f] dark:hover:text-white'
           >
-            {icon}
+            {image}
             <span className='sr-only'>{label}</span>
           </a>
         ))}

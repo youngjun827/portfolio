@@ -22,10 +22,10 @@ const Skills = () => {
             >
               <img
                 className='w-20 mx-auto'
-                src={skill.image}
-                alt={`${skill.title} icon`}
+                src={skill.image as string}
+                alt={`${skill.label} icon`}
               />
-              <p className='my-4'>{skill.title}</p>
+              <p className='my-4'>{skill.label}</p>
             </div>
           ))}
         </div>

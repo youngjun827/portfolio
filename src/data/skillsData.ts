@@ -6,14 +6,15 @@ import GitImg from "../assets/git.png";
 import DockerImg from "../assets/docker.png";
 import LinuxImg from "../assets/Linux.png";
 import AWSImg from "../assets/aws.png";
+import { DataItem } from "../interfaces/Linkdata";
 
-export const skillsData = [
-  { image: ReactImg, title: "React" },
-  { image: NodeImg, title: "Node.js" },
-  { image: SQLImg, title: "PostgreSQL" },
-  { image: MongoImg, title: "MongoDB" },
-  { image: GitImg, title: "Git" },
-  { image: DockerImg, title: "Docker" },
-  { image: LinuxImg, title: "Linux" },
-  { image: AWSImg, title: "AWS" },
+export const skillsData: DataItem[] = [
+  { image: ReactImg, label: "React" },
+  { image: NodeImg, label: "Node.js" },
+  { image: SQLImg, label: "PostgreSQL" },
+  { image: MongoImg, label: "MongoDB" },
+  { image: GitImg, label: "Git" },
+  { image: DockerImg, label: "Docker" },
+  { image: LinuxImg, label: "Linux" },
+  { image: AWSImg, label: "AWS" },
 ];

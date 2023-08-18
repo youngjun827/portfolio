@@ -16,7 +16,7 @@ const Navbar = () => {
               target='_blank'
               rel='noreferrer'
             >
-              {link.label} {link.icon}
+              {link.label} {link.image}
             </a>
           </li>
         ))}

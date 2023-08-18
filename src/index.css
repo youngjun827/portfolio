@@ -21,17 +21,6 @@
   height: 214px;
 }
 
-/*
-.content-div:hover {
-  background-image: linear-gradient(
-    to right,
-
-    rgba(237, 231, 221, 0.8),
-    hsla(10, 31%, 90%, 0.2)
-  ) !important;
-}
-*/
-
 .content-div:hover {
   background-image: linear-gradient(
     to right,
