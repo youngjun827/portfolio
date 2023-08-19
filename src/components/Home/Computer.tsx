@@ -1,25 +1,25 @@
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import { Group, AnimationClip } from "three";
 import GLTFResult from "../../interfaces/GLTFModelData";
+import { Group, AnimationClip } from "three";
 
-const Computer: React.FC = () => {
+const Computer: React.FC = ({ ...props }) => {
   const group = useRef<Group>(null);
   const { nodes, materials, animations } = useGLTF(
     "/computer.gltf"
   ) as unknown as GLTFResult;
-
   const animationClips = Object.values(animations) as AnimationClip[];
+
   const { actions } = useAnimations(animationClips, group.current!);
 
   useEffect(() => {
-    if (actions.Animation) {
+    if (actions?.Animation) {
       actions.Animation.play();
     }
-  }, [actions.Animation]);
+  }, [actions]);
 
   return (
-    <group ref={group}>
+    <group ref={group} {...props}>
       <group name='Sketchfab_Scene'>
         <group
           name='Sketchfab_model'
