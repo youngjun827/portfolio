@@ -10,14 +10,14 @@ const App = () => {
   useEffect(() => {}, []);
 
   return (
-    <>
+    <div data-testid='app-1'>
       <NavBar />
       <Home />
       <About />
       <Skills />
       <Work />
       <Footer />
-    </>
+    </div>
   );
 };
 

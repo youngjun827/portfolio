@@ -3,14 +3,19 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 import GLTFResult from "../../interfaces/GLTFModelData";
 import { Group, AnimationClip } from "three";
 
-const Computer: React.FC = ({ ...props }) => {
-  const group = useRef<Group>(null);
+type AnimationDictionary = {
+  [key: string]: AnimationClip;
+};
+
+const Computer = ({ ...props }) => {
+  const group = useRef<Group | null>(null);
   const { nodes, materials, animations } = useGLTF(
     "/computer.gltf"
   ) as unknown as GLTFResult;
-  const animationClips = Object.values(animations) as AnimationClip[];
 
-  const { actions } = useAnimations(animationClips, group.current!);
+  const animationClips = animations as AnimationDictionary;
+
+  const { actions } = useAnimations(Object.values(animationClips), group);
 
   useEffect(() => {
     if (actions?.Animation) {
