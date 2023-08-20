@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "coverage": "npm test -- --coverage --watchAll --collectCoverageFrom='!src/**/*.{env}.{ts,tsx}' --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='src/data/**/*.{ts,tsx}' --collectCoverageFrom='src/App.tsx'"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +52,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
   },
   "devDependencies": {
     "@juggle/resize-observer": "github:juggle/resize-observer",

@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { DataItem } from "../interfaces/Linkdata";
 
 interface SocialLinks extends DataItem {
-  bgColor: string; // Use actual background color classes here
+  bgColor: string;
 }
 
 export const socialLinks: SocialLinks[] = [
