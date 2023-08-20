@@ -4,4 +4,5 @@ export interface DataItem {
   label: string;
   image: ReactNode;
   url?: string;
+  bgColor?: string;
 }

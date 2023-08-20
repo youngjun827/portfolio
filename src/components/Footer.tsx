@@ -1,11 +1,28 @@
 import React from "react";
-import { socialLinks } from "../data/FooterData";
+import { socialLinks } from "../data/CommonData";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
+const getIconByLabel = (label: string) => {
+  switch (label) {
+    case "Linkedin":
+      return <FaLinkedin size={20} />;
+    case "Github":
+      return <FaGithub size={20} />;
+    case "Email":
+      return <HiOutlineMail size={20} />;
+    case "Twitter":
+      return <FaTwitter size={20} />;
+    default:
+      return null;
+  }
+};
 
 const Footer = () => {
   return (
     <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
-      <nav className='pb-4 flex mt-4 justify-center space-x-6'>
-        {socialLinks.map(({ url, image, label }) => (
+      <nav className='flex mt-4 justify-center space-x-6'>
+        {socialLinks.map(({ url, label }) => (
           <a
             key={label}
             href={url}
@@ -13,7 +30,7 @@ const Footer = () => {
             rel='noreferrer'
             className='text-[#3e3e1f] dark:hover:text-white'
           >
-            {image}
+            <span className='mr-1'>{getIconByLabel(label)}</span>
             <span className='sr-only'>{label}</span>
           </a>
         ))}
