@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { DataItem } from "../interfaces/Linkdata";
 
-export const footerData: DataItem[] = [
+export const socialLinks: DataItem[] = [
   {
     url: "https://www.linkedin.com/in/youngjun827/",
     image: <FaLinkedinIn size={20} />,

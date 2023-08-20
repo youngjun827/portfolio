@@ -1,11 +1,11 @@
 import React from "react";
-import { footerData } from "../data/FooterData";
+import { socialLinks } from "../data/FooterData";
 
 const Footer = () => {
   return (
     <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
       <nav className='pb-4 flex mt-4 justify-center space-x-6'>
-        {footerData.map(({ url, image, label }) => (
+        {socialLinks.map(({ url, image, label }) => (
           <a
             key={label}
             href={url}
