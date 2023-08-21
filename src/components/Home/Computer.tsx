@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF, useAnimations } from "@react-three/drei"; // Make sure to import AnimationClip
 import GLTFResult from "../../interfaces/GLTFModelData";
 import { Group, AnimationClip } from "three";
 

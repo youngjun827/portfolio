@@ -3,7 +3,10 @@ import { socialLinks } from "../data/CommonData";
 
 const Navbar = () => {
   return (
-    <div className='hidden xl:flex fixed flex-col top-[35%] left-0'>
+    <div
+      data-testid='navbar'
+      className='hidden xl:flex fixed flex-col top-[35%] left-0'
+    >
       <ul>
         {socialLinks.map((link, index: number) => (
           <li
@@ -15,6 +18,7 @@ const Navbar = () => {
               href={link.url}
               target='_blank'
               rel='noreferrer'
+              aria-label={link.label} // Add this line
             >
               {link.label} {link.image}
             </a>

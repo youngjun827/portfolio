@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1692578006316" clover="3.2.0">
+  <project timestamp="1692578006316" name="All files">
+    <metrics statements="41" coveredstatements="32" conditionals="7" coveredconditionals="4" methods="16" coveredmethods="14" elements="64" coveredelements="50" complexity="0" loc="41" ncloc="41" packages="5" files="12" classes="12"/>
+    <package name="src">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="App.tsx" path="/Users/youngjun827/dev/portfolio/src/App.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="20" coveredstatements="19" conditionals="5" coveredconditionals="4" methods="9" coveredmethods="9"/>
+      <file name="About.tsx" path="/Users/youngjun827/dev/portfolio/src/components/About.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+      <file name="Footer.tsx" path="/Users/youngjun827/dev/portfolio/src/components/Footer.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="5" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="12" type="cond" truecount="4" falsecount="1"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="29" count="12" type="stmt"/>
+      </file>
+      <file name="NavBar.tsx" path="/Users/youngjun827/dev/portfolio/src/components/NavBar.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+      </file>
+      <file name="Navigation.tsx" path="/Users/youngjun827/dev/portfolio/src/components/Navigation.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+      </file>
+      <file name="Skills.tsx" path="/Users/youngjun827/dev/portfolio/src/components/Skills.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="22" count="24" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Home">
+      <metrics statements="12" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="Computer.tsx" path="/Users/youngjun827/dev/portfolio/src/components/Home/Computer.tsx">
+        <metrics statements="10" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="197" count="2" type="stmt"/>
+      </file>
+      <file name="Home.tsx" path="/Users/youngjun827/dev/portfolio/src/components/Home/Home.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Work">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Project.tsx" path="/Users/youngjun827/dev/portfolio/src/components/Work/Project.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+      </file>
+      <file name="Work.tsx" path="/Users/youngjun827/dev/portfolio/src/components/Work/Work.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="CommonData.tsx" path="/Users/youngjun827/dev/portfolio/src/data/CommonData.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="3" type="stmt"/>
+      </file>
+      <file name="skillsData.ts" path="/Users/youngjun827/dev/portfolio/src/data/skillsData.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="11" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

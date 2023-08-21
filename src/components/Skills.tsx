@@ -3,7 +3,10 @@ import { skillsData } from "../data/skillsData";
 
 const Skills = () => {
   return (
-    <div className='w-full md:h-full bg-[#ede7dd] text-[#636060] py-[3rem]'>
+    <div
+      data-testid='skills'
+      className='w-full md:h-full bg-[#ede7dd] text-[#636060] py-[3rem]'
+    >
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div>
           <p className='text-[#3e3e1f] text-4xl font-bold inline border-b-4 border-[#8a3918] border-600'>

@@ -20,7 +20,10 @@ const getIconByLabel = (label: string) => {
 
 const Footer = () => {
   return (
-    <footer className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'>
+    <footer
+      data-testid='footer'
+      className='p-4 bg-[#ede7dd] rounded-lg shadow md:px-6'
+    >
       <nav className='flex mt-4 justify-center space-x-6'>
         {socialLinks.map(({ url, label }) => (
           <a
@@ -31,7 +34,9 @@ const Footer = () => {
             className='text-[#3e3e1f] dark:hover:text-white'
           >
             <span className='mr-1'>{getIconByLabel(label)}</span>
-            <span className='sr-only'>{label}</span>
+            <span className='sr-only' data-testid={`${label}-label`}>
+              {label}
+            </span>
           </a>
         ))}
       </nav>
